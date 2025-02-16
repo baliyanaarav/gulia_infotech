@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | SSC STUDY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #4f46e5, #a855f7);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .glass:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header class="glass p-5 text-center text-3xl font-bold uppercase shadow-lg">SSC STUDY</header>
+
+<main class="p-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="glass p-6 text-center">
+            <img src="https://via.placeholder.com/300x200" alt="Course Image" class="rounded-md w-full">
+            <h3 class="text-xl font-semibold mt-4">RRB Group D</h3>
+            <p class="text-gray-200 mt-2">This RRB Group D Test Series includes mock tests in English and Hindi, covering General Science, Mathematics, Reasoning, and General Knowledge.</p>
+            <a href="#" class="mt-4 inline-block bg-yellow-400 text-black px-4 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition">View Course</a>
+        </div>
+
+        <div class="glass p-6 text-center">
+            <img src="https://via.placeholder.com/300x200" alt="Course Image" class="rounded-md w-full">
+            <h3 class="text-xl font-semibold mt-4">SSC GD (Hindi Medium)</h3>
+            <p class="text-gray-200 mt-2">SSC Constable GD Exam Preparation in Hindi. Includes mock tests, topic-wise practice questions, and more.</p>
+            <a href="#" class="mt-4 inline-block bg-yellow-400 text-black px-4 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition">View Course</a>
+        </div>
+
+        <div class="glass p-6 text-center">
+            <img src="https://via.placeholder.com/300x200" alt="Course Image" class="rounded-md w-full">
+            <h3 class="text-xl font-semibold mt-4">Current Affairs</h3>
+            <p class="text-gray-200 mt-2">Practice Current Affairs quizzes in English and Hindi. Stay updated with the latest questions and information.</p>
+            <a href="#" class="mt-4 inline-block bg-yellow-400 text-black px-4 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition">View Course</a>
+        </div>
+    </div>
+</main>
+
+<footer class="glass p-5 text-center mt-10">2024 &copy; SSC STUDY. All rights reserved.</footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasoning Mock Test - SSC STUDY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #4f46e5, #a855f7);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .glass:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header class="fixed w-full glass p-5 flex justify-between items-center shadow-lg z-50">
+    <h1 class="text-2xl font-bold uppercase tracking-wide">Reasoning Mock Test</h1>
+</header>
+
+<section class="flex flex-col justify-center items-center text-center py-32">
+    <h2 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-pink-400">SSC Reasoning Test</h2>
+    <p class="mt-4 text-lg">Practice Topic-wise Logical, Verbal, and Non-verbal questions in English and Hindi.</p>
+    <div class="mt-6 flex space-x-4">
+        <a href="#test" class="px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 hover:scale-105 transition">Start Test</a>
+    </div>
+</section>
+
+<section id="test" class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="glass p-6 text-center">
+        <h3 class="text-xl font-semibold">Logical Reasoning</h3>
+        <a href="#" class="text-yellow-300 hover:underline">Take Test</a>
+    </div>
+    <div class="glass p-6 text-center">
+        <h3 class="text-xl font-semibold">Verbal Reasoning</h3>
+        <a href="#" class="text-yellow-300 hover:underline">Take Test</a>
+    </div>
+    <div class="glass p-6 text-center">
+        <h3 class="text-xl font-semibold">Non-Verbal Reasoning</h3>
+        <a href="#" class="text-yellow-300 hover:underline">Take Test</a>
+    </div>
+</section>
+
+<footer class="glass p-6 text-center mt-10">
+    <p>&copy; 2024 Reasoning Mock Test - SSC STUDY</p>
+</footer>
+
+</body>
+</html>

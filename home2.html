@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Material for Competitive Exams - SSC STUDY</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body {
+        background: linear-gradient(135deg, #4f46e5, #a855f7);
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 80px; /* Prevent overlap with fixed header */
+    }
+    .glass {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .glass:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.3);
+    }
+    h2 {
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+</style>
+</head>
+<body>
+
+<!-- Header with Responsive Navbar -->
+<header class="fixed w-full glass p-5 flex justify-between items-center shadow-lg z-50 top-0 left-0 right-0">
+    <h1 class="text-2xl font-bold uppercase tracking-wide">SSC Study</h1>
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">&#9776;</button>
+    
+    <nav id="menu" class="hidden md:flex space-x-6 text-lg">
+        <ul class="md:flex hidden space-x-6">
+            <li><a href="home2.html" class="hover:text-yellow-300">Home</a></li>
+            <li><a href="mock.html" class="hover:text-yellow-300">Mock Test</a></li>
+            <li><a href="maths.html" class="hover:text-yellow-300">Maths</a></li>
+            <li><a href="reasoning.html" class="hover:text-yellow-300">Reasoning</a></li>
+            <li><a href="study.html" class="hover:text-yellow-300">Study Material</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="flex flex-col justify-center items-center text-center py-32">
+    <h2 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-pink-400">
+        Ace Your Competitive Exams
+    </h2>
+    <p class="mt-4 text-lg">Get access to the best study material, mock tests, and PDFs for SSC, Banking, UPSC, and more!</p>
+    <p class="text-lg mt-2">Free Study Material: Online Practice Set, Mock Test, Notes, and book PDFs for SSC CGL, CHSL, CPO, Constable GD, MTS, Steno, JE, UPSSSC PET, UP Police, Bank, and all Govt Jobs Competitive exams. Complete preparation material at one website.</p>
+        <p class="text-lg mt-2">Competitive Exams Study Material includes Practice Set, Mock Test, Previous year paper, Notes, and Book PDFs for the preparation of the following competitive exams:</p>
+    </div>
+    <div class="mt-6 flex space-x-4">
+        <a href="#competitive-exams" class="px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-500 hover:scale-105 transition">Get Started</a>
+        <a href="#download-pdf" class="px-6 py-3 bg-pink-500 text-white font-bold rounded-full hover:bg-pink-600 hover:scale-105 transition">Download PDFs</a>
+    </div>
+</section>
+
+<!-- Competitive Exams Section -->
+<section id="competitive-exams" class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="glass p-6 text-center">
+        <h3 class="text-xl font-semibold">SSC GD</h3>
+        <a href="#" class="text-yellow-300 hover:underline">Start Practice</a>
+    </div>
+    <div class="glass p-6 text-center">
+        <h3 class="text-xl font-semibold">SSC CGL</h3>
+        <a href="#" class="text-yellow-300 hover:underline">Start Practice</a>
+    </div>
+    <div class="glass p-6 text-center">
+        <h3 class="text-xl font-semibold">UPSSSC PET</h3>
+        <a href="#" class="text-yellow-300 hover:underline">Start Practice</a>
+    </div>
+    <div class="glass p-6 text-center">
+        <h3 class="text-xl font-semibold">Reasoning Test</h3>
+        <a href="#" class="text-yellow-300 hover:underline">Take Test</a>
+    </div>
+</section>
+
+<!-- Download PDFs Section -->
+<section id="download-pdf" class="p-10">
+    <h2 class="text-center text-4xl font-bold">Download Free PDFs</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <div class="glass p-6 text-center">
+            <h3 class="text-xl font-semibold">Mathematics PDF</h3>
+            <a href="#" class="text-yellow-300 hover:underline">Download</a>
+        </div>
+        <div class="glass p-6 text-center">
+            <h3 class="text-xl font-semibold">General Knowledge PDF</h3>
+            <a href="#" class="text-yellow-300 hover:underline">Download</a>
+        </div>
+        <div class="glass p-6 text-center">
+            <h3 class="text-xl font-semibold">English PDF</h3>
+            <a href="#" class="text-yellow-300 hover:underline">Download</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="glass p-6 text-center mt-10">
+    <p>&copy; 2024 SSC Study | All rights reserved.</p>
+</footer>
+
+<!-- JavaScript for Responsive Menu -->
+<script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+        let menu = document.getElementById('menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+</script>
+
+</body>
+</html>
